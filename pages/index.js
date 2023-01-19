@@ -82,7 +82,7 @@ export default function Home() {
                   <div className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
                     <div className="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
                       <p className="font-body text-lg uppercase text-white">
-                        Let's connect
+                        Let&apos;s connect
                       </p>
                       <div className="hidden sm:block">
                         <i className="bx bx-chevron-right text-yellow text-3xl text-white"></i>
@@ -334,8 +334,8 @@ export default function Home() {
                   </h4>
                   <p className="pt-2 text-base font-light text-gray-700">
                     A mobile app to detect, count, classify and tag shrimp
-                    larvaes, using your phone's camera. It uses TensorFlow to
-                    detect the larvaes and a custom CNN to classify them.
+                    larvaes, using your phone&apos;s camera. It uses TensorFlow
+                    to detect the larvaes and a custom CNN to classify them.
                   </p>
                 </div>
               </div>
