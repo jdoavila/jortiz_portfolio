@@ -2,7 +2,11 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html
+      lang="en"
+      className="scroll-smooth hover:scroll-auto"
+      style={{ scrollBehavior: "smooth" }}
+    >
       <Head>
         <meta charset="utf-8" />
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />

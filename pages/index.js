@@ -24,10 +24,10 @@ export default function Home() {
                 </h2>
               </Link>
             </div>
-            <div className="hidden lg:block">
+            <div className="lg:block">
               <ul className="flex items-center">
                 <li className="group pl-6">
-                  <Link href="#about">
+                  <Link href="#about" scroll={false}>
                     <span className="font-header cursor-pointer pt-0.5 font-semibold uppercase text-white">
                       About
                     </span>
@@ -35,7 +35,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li className="group pl-6">
-                  <Link href="#portfolio">
+                  <Link href="#portfolio" scroll={false}>
                     <span className="font-header cursor-pointer pt-0.5 font-semibold uppercase text-white">
                       Portfolio
                     </span>
@@ -43,17 +43,14 @@ export default function Home() {
                   </Link>
                 </li>
                 <li className="group pl-6">
-                  <span className="font-header cursor-pointer pt-0.5 font-semibold uppercase text-white">
-                    Contact
-                  </span>
-                  <span className="block h-0.5 w-full bg-transparent transition-all duration-300 group-hover:bg-yellow-500"></span>
+                  <Link href="#contact" scroll={false}>
+                    <span className="font-header cursor-pointer pt-0.5 font-semibold uppercase text-white">
+                      Contact
+                    </span>
+                    <span className="block h-0.5 w-full bg-transparent transition-all duration-300 group-hover:bg-yellow-500"></span>
+                  </Link>
                 </li>
               </ul>
-            </div>
-            <div className="block lg:hidden">
-              <button className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
-                <i className="bx bx-menu text-2xl text-white"></i>
-              </button>
             </div>
           </div>
         </div>
