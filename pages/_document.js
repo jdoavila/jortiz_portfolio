@@ -8,18 +8,14 @@ export default function Document() {
       style={{ scrollBehavior: "smooth" }}
     >
       <Head>
-        <meta charset="utf-8" />
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-        <meta
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          name="viewport"
-        />
+        <meta charSet="utf-8" />
+        <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
         <meta name="theme-color" content="#5540af" />
         <meta property="og:site_name" content="Daniel Ortiz Porfolio" />
         <meta name="twitter:site" content="@danielortiz_d" />
 
         <link
-          crossorigin="crossorigin"
+          crossOrigin="crossorigin"
           href="https://fonts.gstatic.com"
           rel="preconnect"
         />

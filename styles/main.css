@@ -308,7 +308,7 @@ select {
   background-position: right 0.5rem center;
   background-repeat: no-repeat;
   background-size: 1.5em 1.5em;
-  color-adjust: exact;
+  print-color-adjust: exact;
   padding-right: 2.5rem;
 }
 [multiple] {
@@ -317,7 +317,7 @@ select {
   background-position: 0 0;
   background-repeat: unset;
   background-size: initial;
-  color-adjust: unset;
+  print-color-adjust: unset;
   padding-right: 0.75rem;
 }
 [type="checkbox"],
@@ -333,7 +333,7 @@ select {
   border-color: #6b7280;
   border-width: 1px;
   color: #2563eb;
-  color-adjust: exact;
+  print-color-adjust: exact;
   display: inline-block;
   flex-shrink: 0;
   height: 1rem;

@@ -255,7 +255,7 @@ export default function Home() {
               Some of the projects I have worked on
             </h3>
             <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
-              <div class="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
+              <div className="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
                 <div className="mx-auto text-center">
                   <Link
                     href="#"
@@ -282,7 +282,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div class="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
+              <div className="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
                 <div className="mx-auto text-center">
                   <Link
                     href="#"
@@ -310,7 +310,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div class="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
+              <div className="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
                 <div className="mx-auto text-center">
                   <Link
                     href="#"
@@ -337,7 +337,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div class="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
+              <div className="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
                 <div className="mx-auto text-center">
                   <Link
                     href="#"
