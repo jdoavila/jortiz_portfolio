@@ -264,7 +264,7 @@ export default function Home() {
                     <Image
                       className="w-full shadow"
                       alt="Portfolio image: Triton Sonic feeder firmware"
-                      src="/img/portfolio/triton_sonic_dashboard.png"
+                      src="/img/portfolio/triton_sonic_dashboard.jpg"
                       width={600}
                       height={400}
                     ></Image>
@@ -291,7 +291,7 @@ export default function Home() {
                     <Image
                       className="w-full shadow"
                       alt="Portfolio image: Kraken Farm"
-                      src="/img/portfolio/kraken_farm.png"
+                      src="/img/portfolio/kraken_farm.jpg"
                       width={600}
                       height={400}
                     ></Image>
@@ -319,7 +319,7 @@ export default function Home() {
                     <Image
                       className="w-full shadow"
                       alt="Portfolio image: Kraken Farm"
-                      src="/img/portfolio/larvea_tagger.png"
+                      src="/img/portfolio/larvea_tagger.jpg"
                       width={600}
                       height={400}
                     ></Image>
@@ -346,7 +346,7 @@ export default function Home() {
                     <Image
                       className="w-full shadow"
                       alt="Portfolio image: Kraken Farm"
-                      src="/img/portfolio/504assist_website.png"
+                      src="/img/portfolio/504assist_website.jpg"
                       width={600}
                       height={400}
                     ></Image>
