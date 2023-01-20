@@ -11,7 +11,6 @@
   --tw-content: "";
 }
 html {
-  -webkit-text-size-adjust: 100%;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -99,7 +98,6 @@ select {
 [type="reset"],
 [type="submit"],
 button {
-  -webkit-appearance: button;
   background-color: transparent;
   background-image: none;
 }
@@ -117,7 +115,6 @@ progress {
   height: auto;
 }
 [type="search"] {
-  -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 ::-webkit-search-decoration {
@@ -203,7 +200,6 @@ object,
 svg,
 video {
   display: block;
-  vertical-align: middle;
 }
 img,
 video {
