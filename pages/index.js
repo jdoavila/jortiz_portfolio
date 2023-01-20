@@ -248,7 +248,7 @@ export default function Home() {
           </div>
 
           <div className="container py-16 md:py-20" id="portfolio">
-            <h2 className="font-header text-center text-4xl font-semibold uppercase text-indigo-500 sm:text-5xl lg:text-6xl">
+            <h2 className="font-header text-center text-4xl font-semibold uppercase text-slate-500 sm:text-4xl lg:text-5xl">
               Check out my Portfolio
             </h2>
             <h3 className="pt-6 text-center font-sans text-xl font-light text-gray-700 sm:text-2xl lg:text-3xl">
