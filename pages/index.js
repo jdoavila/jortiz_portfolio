@@ -17,7 +17,7 @@ export default function Home() {
       <main className="relative">
         <div className="absolute top-0 z-50 w-full py-3 sm:py-5">
           <div className="container flex items-center justify-between">
-            <div>
+            <div className="hidden sm:block">
               <Link href="/">
                 <h2 className="font-header ml-4 cursor-pointer text-2xl text-white">
                   jortiz.dev
