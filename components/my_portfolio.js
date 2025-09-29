@@ -1,5 +1,39 @@
-import Link from "next/link";
 import Image from "next/image";
+
+const PROJECTS = [
+  {
+    id: "project-triton-sonic",
+    title: "Triton Sonic feeder firmware",
+    description:
+      "Firmware y panel web para controlar alimentadores inteligentes con monitoreo remoto en tiempo real.",
+    image: "/img/portfolio/triton_sonic_dashboard.jpg",
+    alt: "Panel principal del Triton Sonic feeder con métricas en tiempo real.",
+  },
+  {
+    id: "project-kraken-farm",
+    title: "Kraken Farm",
+    description:
+      "Plataforma integral para gestionar cada etapa de una granja camaronera, desde la alimentación hasta la cosecha.",
+    image: "/img/portfolio/kraken_farm.jpg",
+    alt: "Dashboard de Kraken Farm mostrando indicadores clave de la producción acuícola.",
+  },
+  {
+    id: "project-larvae-tagger",
+    title: "Larvae Tagger Mobile App",
+    description:
+      "App móvil que detecta, cuenta y etiqueta larvas de camarón con TensorFlow y modelos de visión computarizada.",
+    image: "/img/portfolio/larvea_tagger.jpg",
+    alt: "Pantalla de la app Larvae Tagger con resultados de clasificación de larvas.",
+  },
+  {
+    id: "project-504-assist",
+    title: "504 Assist Website and Mobile App",
+    description:
+      "Ecosistema digital para contratar seguros de viaje y conversar con agentes en vivo desde la app móvil.",
+    image: "/img/portfolio/504assist_website.jpg",
+    alt: "Vista previa del sitio y la app 504 Assist con módulos de atención al viajero.",
+  },
+];
 
 export default function MyPortfolio() {
   return (
@@ -11,113 +45,28 @@ export default function MyPortfolio() {
         Some of the projects I have worked on
       </h3>
       <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
-        <div className="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
-          <div className="mx-auto text-center">
-            <Link
-              href="#"
-              className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-            >
+        {PROJECTS.map(({ id, title, description, image, alt }) => (
+          <article
+            key={id}
+            id={id}
+            className="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105"
+          >
+            <figure className="mx-auto text-center">
               <Image
                 className="w-full shadow"
-                alt="Portfolio image: Triton Sonic feeder firmware"
-                src="/img/portfolio/triton_sonic_dashboard.jpg"
+                alt={alt}
+                src={image}
                 width={600}
                 height={400}
-              ></Image>
-            </Link>
-          </div>
-          <div className="text-center">
-            <h4 className="pt-4 text-2xl font-semibold text-gray-900">
-              Triton Sonic feeder firmware
-            </h4>
-            <p className="pt-2 text-base font-light text-gray-700">
-              Firmware for a smart feeder for shrimp and fish. It has a web
-              interface to control the feeder and a mobile app to control it
-              remotely.
-            </p>
-          </div>
-        </div>
-
-        <div className="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
-          <div className="mx-auto text-center">
-            <Link
-              href="#"
-              className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-            >
-              <Image
-                className="w-full shadow"
-                alt="Portfolio image: Kraken Farm"
-                src="/img/portfolio/kraken_farm.jpg"
-                width={600}
-                height={400}
-              ></Image>
-            </Link>
-          </div>
-          <div className="text-center">
-            <h4 className="pt-4 text-2xl font-semibold text-gray-900">
-              Kraken Farm
-            </h4>
-            <p className="pt-2 text-base font-light text-gray-700">
-              A web application to manage a shrimp farm. It has a dashboard to
-              control the farm and a mobile app to control it remotely. Controls
-              all the process of the farm, from the feeding to the harvest.
-            </p>
-          </div>
-        </div>
-
-        <div className="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
-          <div className="mx-auto text-center">
-            <Link
-              href="#"
-              className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-            >
-              <Image
-                className="w-full shadow"
-                alt="Portfolio image: Kraken Farm"
-                src="/img/portfolio/larvea_tagger.jpg"
-                width={600}
-                height={400}
-              ></Image>
-            </Link>
-          </div>
-          <div className="text-center">
-            <h4 className="pt-4 text-2xl font-semibold text-gray-900">
-              Larvae Tagger Mobile App
-            </h4>
-            <p className="pt-2 text-base font-light text-gray-700">
-              A mobile app to detect, count, classify and tag shrimp larvaes,
-              using your phone&apos;s camera. It uses TensorFlow to detect the
-              larvaes and a custom CNN to classify them.
-            </p>
-          </div>
-        </div>
-
-        <div className="group transform rounded bg-gray-50 px-8 py-8 shadow transition-all hover:scale-105">
-          <div className="mx-auto text-center">
-            <Link
-              href="#"
-              className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-            >
-              <Image
-                className="w-full shadow"
-                alt="Portfolio image: Kraken Farm"
-                src="/img/portfolio/504assist_website.jpg"
-                width={600}
-                height={400}
-              ></Image>
-            </Link>
-          </div>
-          <div className="text-center">
-            <h4 className="pt-4 text-2xl font-semibold text-gray-900">
-              504 Assist Website and Mobile App
-            </h4>
-            <p className="pt-2 text-base font-light text-gray-700">
-              A website and mobile app to help travelers to get an insurance for
-              their trip. It has a live communication between user and the
-              operators.
-            </p>
-          </div>
-        </div>
+              />
+              <figcaption className="sr-only">{title}</figcaption>
+            </figure>
+            <div className="text-center">
+              <h4 className="pt-4 text-2xl font-semibold text-gray-900">{title}</h4>
+              <p className="pt-2 text-base font-light text-gray-700">{description}</p>
+            </div>
+          </article>
+        ))}
       </div>
     </div>
   );

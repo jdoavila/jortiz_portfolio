@@ -11,24 +11,8 @@ export default function Document() {
         <meta charSet="utf-8" />
         <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
         <meta name="theme-color" content="#5540af" />
-        <meta property="og:site_name" content="Daniel Ortiz Porfolio" />
+        <meta property="og:site_name" content="Daniel Ortiz Portfolio" />
         <meta name="twitter:site" content="@danielortiz_d" />
-
-        <link
-          crossOrigin="crossorigin"
-          href="https://fonts.gstatic.com"
-          rel="preconnect"
-        />
-        <link
-          as="style"
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-          rel="preload"
-        />
-
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
 
         <link
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"

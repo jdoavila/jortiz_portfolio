@@ -2,16 +2,16 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="absolute top-0 z-50 w-full py-3 sm:py-5">
+    <header className="absolute top-0 z-50 w-full py-3 sm:py-5">
       <div className="container flex items-center justify-between">
         <div className="hidden sm:block">
-          <Link href="/">
-            <h2 className="font-header ml-4 cursor-pointer text-2xl text-white">
+          <Link href="/" aria-label="Ir a la página de inicio">
+            <span className="font-header ml-4 cursor-pointer text-2xl text-white">
               jortiz.dev
-            </h2>
+            </span>
           </Link>
         </div>
-        <div className="lg:block">
+        <nav aria-label="Navegación principal" className="lg:block">
           <ul className="flex items-center">
             <li className="group pl-6">
               <Link href="#about" scroll={false}>
@@ -38,8 +38,8 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SOCIAL_LINKS } from "@/lib/social-links";
 
 export default function Banner() {
   return (
@@ -13,10 +14,11 @@ export default function Banner() {
           <div className="rounded-full bg-gradient-to-r from-blue-600 to-violet-600 p-2 shadow-xl">
             <Image
               src="/img/jortiz_profile.jpg"
-              alt="Profile"
+              alt="Retrato profesional de Daniel Ortiz"
               width={200}
               height={200}
               className="sm:h-46 h-48 rounded-full"
+              priority
             />
           </div>
           <div className="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
@@ -28,38 +30,28 @@ export default function Banner() {
                 <p className="font-body text-lg uppercase text-white">
                   Let&apos;s connect
                 </p>
-                <div className="hidden sm:block">
+                <div className="hidden sm:block" aria-hidden="true">
                   <i className="bx bx-chevron-right text-yellow text-3xl text-white"></i>
                 </div>
               </div>
               <div className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
-                <Link
-                  href="https://www.facebook.com/danielortiz21"
-                  target="_blank"
-                >
-                  <i className="bx bxl-facebook-square hover:text-yellow text-2xl text-white"></i>
-                </Link>
-                <Link href="https://twitter.com/danielortiz_d" target="_blank">
-                  <i className="bx bxl-twitter hover:text-yellow ml-4 text-2xl text-white"></i>
-                </Link>
-                <Link
-                  href="https://www.instagram.com/jdoavila/"
-                  target="_blank"
-                >
-                  <i className="bx bxl-instagram hover:text-yellow ml-4 text-2xl text-white"></i>
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/jdoavila/"
-                  target="_blank"
-                >
-                  <i className="bx bxl-linkedin hover:text-yellow ml-4 text-2xl text-white"></i>
-                </Link>
-                <Link href="https://github.com/jdoavila" target="_blank">
-                  <i className="bx bxl-github hover:text-yellow ml-4 text-2xl text-white"></i>
-                </Link>
-                <Link href="mailto:jdoavila@gmail.com" target="_blank">
-                  <i className="bx bx-mail-send hover:text-yellow ml-4 text-2xl text-white"></i>
-                </Link>
+                {SOCIAL_LINKS.map(({ href, label, icon }) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    title={label}
+                    className="mx-2 first:ml-0"
+                  >
+                    <span className="sr-only">{label}</span>
+                    <i
+                      className={`bx ${icon} text-2xl text-white transition-colors duration-200 hover:text-yellow-400`}
+                      aria-hidden="true"
+                    ></i>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jortiz.dev
+
+# Sitemaps
+Sitemap: https://jortiz.dev/sitemap.xml

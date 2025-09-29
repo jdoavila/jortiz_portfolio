@@ -45,9 +45,13 @@ export default function AboutMe() {
                 {/* <Link href="https://drive.google.com/file/d/1ytNjUrWJCPv525mfKPkh4ZYRJ_errN__/view?usp=share_link"> */}
                 <Link
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://drive.google.com/file/d/1jCemI7kCeOVnInGleSCECWo3bh6jEfgh/view?usp=share_link"
+                  aria-label="Descargar currículum en PDF"
+                  title="Descargar currículum en PDF"
                 >
-                  <i className="bx bxs-file-pdf text-3xl text-slate-500"></i>
+                  <span className="sr-only">Descargar currículum</span>
+                  <i className="bx bxs-file-pdf text-3xl text-slate-500" aria-hidden="true"></i>
                 </Link>
               </div>
             </div>
