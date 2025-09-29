@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { useRouter } from "next/router";
 import { Open_Sans, Raleway } from "next/font/google";
 
-const SITE_URL = "https://jortiz.dev";
+const SITE_URL = "https://jdoavila.com";
 const DEFAULT_TITLE = "Daniel Ortiz | Full Stack Developer";
 const DEFAULT_DESCRIPTION =
   "Portafolio de Daniel Ortiz, desarrollador full stack que crea soluciones en Next.js, Python y visión por computadora para la industria camaronera.";

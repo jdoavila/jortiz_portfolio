@@ -6,7 +6,7 @@ import AboutMe from "@/components/about_me";
 import MyPortfolio from "@/components/my_portfolio";
 import Contact from "@/components/contact";
 
-const SITE_URL = "https://jortiz.dev";
+const SITE_URL = "https://jdoavila.com";
 const OG_IMAGE = `${SITE_URL}/img/social.jpg`;
 
 const structuredData = {

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://jortiz.dev
+Host: https://jdoavila.com
 
 # Sitemaps
-Sitemap: https://jortiz.dev/sitemap.xml
+Sitemap: https://jdoavila.com/sitemap.xml

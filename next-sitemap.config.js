@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://jortiz.dev',
+  siteUrl: 'https://jdoavila.com',
   generateRobotsTxt: true,
   sitemapSize: 7000,
   changefreq: 'monthly',
