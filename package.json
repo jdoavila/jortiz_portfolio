@@ -1,6 +1,6 @@
 {
   "name": "jortiz_portfolio",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "private": true,
   "author": {
     "name": "José Daniel Ortiz Avila",
@@ -35,6 +35,6 @@
     "next-sitemap": "^4.0.6"
   },
   "engines": {
-    "node": "22.0.0"
+    "node": ">=22.0.0"
   }
 }
