@@ -10,7 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -18,17 +18,21 @@
     "@tailwindcss/typography": "^0.5.13",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
-    "eslint": "^8.0.0",
-    "eslint-config-next": "14.2.3",
-    "next": "14.2.3",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.5.4",
+    "next": "15.5.4",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "tailwindcss": "^3.4.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
