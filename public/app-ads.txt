@@ -1,0 +1,6 @@
+# app-ads.txt for jdoavila.com
+# Add una entrada por socio autorizado usando el formato:
+# dominio_publicador, id_publicador, relacion, id_autoridad_de_certificacion
+# Ejemplo para Google AdMob o Ad Manager:
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-2011927762698333, DIRECT, f08c47fec0942fa0
