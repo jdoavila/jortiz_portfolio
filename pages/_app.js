@@ -1,15 +1,13 @@
 import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { ThemeProvider } from "next-themes";
 import Head from "next/head";
 import Layout from "@/components/layout";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { useRouter } from "next/router";
 import { Open_Sans, Raleway } from "next/font/google";
 
-const SITE_URL = "https://jdoavila.com";
-const DEFAULT_TITLE = "Daniel Ortiz | Full Stack Developer";
-const DEFAULT_DESCRIPTION =
-  "Portafolio de Daniel Ortiz, desarrollador full stack que crea soluciones en Next.js, Python y visión por computadora para la industria camaronera.";
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, SITE_URL } from "@/lib/data";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -73,11 +71,13 @@ export default function App({ Component, pageProps }) {
         <meta key="twitter:site" name="twitter:site" content="@danielortiz_d" />
       </Head>
       <div className={`${openSans.variable} ${raleway.variable}`}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-        <Analytics />
-        <SpeedInsights />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+          <Analytics />
+          <SpeedInsights />
+        </ThemeProvider>
       </div>
     </>
   );

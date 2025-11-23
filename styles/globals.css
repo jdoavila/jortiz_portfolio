@@ -1,4 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url(./main.css);
+
+body {
+  line-height: inherit;
+  margin: 0;
+  font-family: var(--font-body, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji);
+  @apply dark:bg-slate-900 dark:text-slate-50;
+}
+
+.skip-link {
+  @apply absolute left-0 top-[-100px] z-[100] bg-white p-3 text-black transition-all focus:top-0;
+}

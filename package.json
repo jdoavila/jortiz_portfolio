@@ -7,7 +7,7 @@
     "email": "jdoavila@gmail.com"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
@@ -22,17 +22,18 @@
     "eslint": "^8.57.1",
     "eslint-config-next": "15.5.4",
     "next": "15.5.4",
+    "next-themes": "^0.4.6",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "autoprefixer": "^10.4.19",
+    "next-sitemap": "^4.0.6",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "tailwindcss": "^3.4.3",
-    "next-sitemap": "^4.0.6"
+    "tailwindcss": "^3.4.3"
   },
   "engines": {
     "node": ">=22.0.0"

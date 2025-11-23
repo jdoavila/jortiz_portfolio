@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SOCIAL_LINKS } from "@/lib/social-links";
+import { PERSONAL_DATA, SOCIAL_LINKS } from "@/lib/data";
 
 export default function Banner() {
   return (
@@ -23,7 +23,7 @@ export default function Banner() {
           </div>
           <div className="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
             <h1 className="font-header text-center text-4xl text-white sm:text-5xl md:text-6xl">
-              Daniel Ortiz!
+              {PERSONAL_DATA.name}!
             </h1>
             <div className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
               <div className="flex items-center justify-center pl-0 sm:justify-start md:pl-1">

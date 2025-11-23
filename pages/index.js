@@ -6,69 +6,42 @@ import AboutMe from "@/components/about_me";
 import MyPortfolio from "@/components/my_portfolio";
 import Contact from "@/components/contact";
 
-const SITE_URL = "https://jdoavila.com";
+import { PERSONAL_DATA, PROJECTS, SITE_URL } from "@/lib/data";
+
 const OG_IMAGE = `${SITE_URL}/img/social.jpg`;
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Daniel Ortiz",
+  name: PERSONAL_DATA.name,
   url: SITE_URL,
-  jobTitle: "Full Stack Developer",
-  description:
-    "Desarrollador full stack especializado en Next.js, Python y soluciones de visión por computadora para la industria camaronera.",
-  image: `${SITE_URL}/img/jortiz_profile.jpg`,
+  jobTitle: PERSONAL_DATA.jobTitle,
+  description: PERSONAL_DATA.description,
+  image: `${SITE_URL}${PERSONAL_DATA.image}`,
   sameAs: [
-    "https://www.linkedin.com/in/jdoavila/",
-    "https://github.com/jdoavila",
-    "https://twitter.com/danielortiz_d",
-    "https://www.facebook.com/danielortiz21",
+    PERSONAL_DATA.social.linkedin,
+    PERSONAL_DATA.social.github,
+    PERSONAL_DATA.social.twitter,
+    PERSONAL_DATA.social.facebook,
   ],
-  hasPart: [
-    {
-      "@type": "CreativeWork",
-      name: "Triton Sonic feeder firmware",
-      url: `${SITE_URL}/#project-triton-sonic`,
-      image: `${SITE_URL}/img/portfolio/triton_sonic_dashboard.jpg`,
-      description:
-        "Firmware y panel de control para alimentar granjas acuícolas con monitoreo remoto en tiempo real.",
-    },
-    {
-      "@type": "CreativeWork",
-      name: "Kraken Farm",
-      url: `${SITE_URL}/#project-kraken-farm`,
-      image: `${SITE_URL}/img/portfolio/kraken_farm.jpg`,
-      description:
-        "Plataforma integral para administrar granjas camaroneras desde la alimentación hasta la cosecha.",
-    },
-    {
-      "@type": "CreativeWork",
-      name: "Larvae Tagger Mobile App",
-      url: `${SITE_URL}/#project-larvae-tagger`,
-      image: `${SITE_URL}/img/portfolio/larvea_tagger.jpg`,
-      description:
-        "Aplicación móvil que detecta, cuenta y clasifica larvas de camarón con TensorFlow y modelos CNN.",
-    },
-    {
-      "@type": "CreativeWork",
-      name: "504 Assist Website and Mobile App",
-      url: `${SITE_URL}/#project-504-assist`,
-      image: `${SITE_URL}/img/portfolio/504assist_website.jpg`,
-      description:
-        "Suite digital para contratar seguros de viaje con soporte en tiempo real y aplicaciones móviles.",
-    },
-  ],
+  hasPart: PROJECTS.map((project) => ({
+    "@type": "CreativeWork",
+    name: project.title,
+    url: project.url,
+    image: `${SITE_URL}${project.image}`,
+    description: project.description,
+  })),
 };
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Daniel Ortiz | Full Stack Developer</title>
+        <title>{`${PERSONAL_DATA.name} | ${PERSONAL_DATA.jobTitle}`}</title>
         <meta
           key="description"
           name="description"
-          content="Portafolio y proyectos de Daniel Ortiz, desarrollador full stack que impulsa soluciones con Next.js, Python y visión por computadora."
+          content={`Portafolio y proyectos de ${PERSONAL_DATA.name}, ${PERSONAL_DATA.jobTitle.toLowerCase()} que impulsa soluciones con Next.js, Python y visión por computadora.`}
         />
         <link key="canonical" rel="canonical" href={SITE_URL} />
         <meta
